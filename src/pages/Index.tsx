@@ -7,6 +7,10 @@ import PlatformSection from "@/components/sections/PlatformSection";
 import BuildPlanSection from "@/components/sections/BuildPlanSection";
 import AutomationSection from "@/components/sections/AutomationSection";
 import WhyUsSection from "@/components/sections/WhyUsSection";
+import LocationShowcaseSection from "@/components/sections/LocationShowcaseSection";
+import ROICalculatorSection from "@/components/sections/ROICalculatorSection";
+import TimelineSection from "@/components/sections/TimelineSection";
+import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import StickyTotal from "@/components/StickyTotal";
 
 const Index = () => {
@@ -57,6 +61,14 @@ const Index = () => {
         );
       case "automation":
         return <AutomationSection />;
+      case "locations":
+        return <LocationShowcaseSection />;
+      case "roi":
+        return <ROICalculatorSection />;
+      case "timeline":
+        return <TimelineSection />;
+      case "testimonials":
+        return <TestimonialsSection />;
       case "whyus":
         return <WhyUsSection onBuildPlan={handleBuildPlan} />;
       default:
